@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f2f2;
+  padding: 20px 80px;
+}
+.nav-button {
+  color: #0d0d0d;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.nav-button:hover {
+  color: #3b1473;
+}
