@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #271c33;
+  padding: 20px 20px;
+}
+.nav-title {
+  color: #eae1ef;
+  margin-right: auto;
+}
+.nav-button {
+  color: #eae1ef;
+  text-decoration: none;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 1000;
+  transition: 0.3s ease-in-out;
+  padding-right: 1rem;
+}
+.nav-button:hover {
+  color: rgb(95, 98, 116);
+  cursor: pointer;
+}
+.icon {
+  padding-right: 80px;
+  max-height: 40px;
+  max-width: 40px;
+}
