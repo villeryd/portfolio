@@ -1,0 +1,13 @@
+.hero {
+  display: flex;
+  padding: 2rem 2rem;
+  justify-content: space-between;
+  background-color: #eddbff;
+}
+.hero-text {
+  margin-right: auto;
+  color: #271c33;
+}
+.hero-image {
+  transform: scaleX(-1);
+}

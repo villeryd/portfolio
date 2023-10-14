@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue:Regular,italic|Gabarito:regular,medium,bold");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Gabarito", sans-serif;
+  color: #eae1ef;
+}
 #root,
 html {
   height: 100%;
-  background: #0d0d0d;
+  background: linear-gradient(113deg, #d150ff, #271946);
 }
