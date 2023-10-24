@@ -23,7 +23,7 @@ export function Navbar() {
   return (
     <div className='nav'>
       <img className='icon' src={smiley} loading='lazy'></img>
-      <h1 className="nav-title">Daniel Villery</h1>
+      <h2 className='nav-title'>Daniel Villery</h2>
       {navButtons.map((button) => (
         <NavLink className='nav-button' to={button.link} key={button.name}>
           {button.name}

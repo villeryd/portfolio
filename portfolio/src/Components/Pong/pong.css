@@ -1,0 +1,53 @@
+@import url("../../Components/Navbar/Navbar.css");
+@import url("../../Components/Hero/Hero.css");
+.background {
+  height: 50vh;
+  background-color: #28345c;
+}
+.paddle {
+  --position: 50;
+  position: absolute;
+  background-color: #d1736a;
+  top: calc(var(--position) * 1%);
+  transform: translateY(-50%);
+  width: 1%;
+  height: 10%;
+}
+.paddle.left {
+  left: 1%;
+}
+
+.paddle.right {
+  right: 1%;
+}
+
+.ball {
+  --x: 50;
+  --y: 50;
+  position: absolute;
+  background-color: #d1736a;
+  border-radius: 50%;
+  left: calc(var(--x) * 1%);
+  top: calc(var(--y) * 1%);
+  transform: translate(-50%, -50%);
+  width: 2.5%;
+  height: 2.5%;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 4vh;
+}
+.score > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0 3vh;
+  margin: 1vh 0;
+}
+
+.score > :first-child {
+  text-align: right;
+  border-right: 0.5vh solid #d1736a;
+}

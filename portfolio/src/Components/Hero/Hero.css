@@ -1,13 +1,10 @@
 .hero {
-  display: flex;
+  display: grid;
   padding: 2rem 2rem;
-  justify-content: space-between;
-  background-color: #eddbff;
+  justify-content: center;
 }
 .hero-text {
-  margin-right: auto;
-  color: #271c33;
-}
-.hero-image {
-  transform: scaleX(-1);
+  display: grid;
+  justify-content: center;
+  font-size: 9vw;
 }
