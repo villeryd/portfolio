@@ -1,4 +1,4 @@
-import smiley from "../../../public/memphis-emoji-smiled-face-1.png";
+import smiley from "./../../assets/memphis-emoji-smiled-face-1.png";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 export function Navbar() {

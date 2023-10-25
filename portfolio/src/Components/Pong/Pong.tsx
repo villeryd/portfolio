@@ -9,10 +9,20 @@ export function Pong() {
   const [time, setTime] = useState<number>(0);
   const [deltaTime, setDeltaTime] = useState<number>(0);
 
-  useFrameLoop((time, deltaTime) => {
-    setTime(time);
-    setDeltaTime(deltaTime);
-  });
+  //   useFrameLoop((time, deltaTime) => {
+  //     setTime(time);
+  //     setDeltaTime(deltaTime);
+  //   });
+  let lastTime: number;
+  function update(time) {
+    if (lastTime != null) {
+      setDeltaTime(time - lastTime);
+    }
+    lastTime = time;
+    window.requestAnimationFrame(update);
+  }
+
+  window.requestAnimationFrame(update);
 
   return (
     <div className='background'>
@@ -21,7 +31,7 @@ export function Pong() {
         <div id='computer-score'>{computerScore}</div>
       </div>
 
-      <Ball />
+      <Ball delta={deltaTime} />
       <div className='paddle left'></div>
       <div className='paddle right'></div>
     </div>

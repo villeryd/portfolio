@@ -29,6 +29,7 @@
   border-radius: 50%;
   /* left: calc(var(--x) * 1%);
   top: calc(var(--y) * 1%); */
+
   transform: translate(-50%, -50%);
   width: 2.5%;
   height: 2.5%;

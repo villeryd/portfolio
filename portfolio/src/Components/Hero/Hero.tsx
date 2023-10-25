@@ -1,5 +1,5 @@
 import "./Hero.css";
-import coffeeMugMan from "../../../public/man-with-coffee-mug.svg";
+
 export function Hero() {
   return (
     <div className='hero'>
